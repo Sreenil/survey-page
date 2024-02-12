@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--charset , viewport and page description-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style type="text/css">
+
+        body
+        {
+            background-color: lightblue;
+        }
+
+        .form-control
+        {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        form
+        {
+            margin: 50px auto;
+            padding: 30px 30px;
+            max-width: 450px;
+            background-color: white;
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea
+        {
+            display: block;
+            padding: 10px;
+            width: 95%;
+        }
+
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"]
+        {
+            display: inline-block;
+            width: auto;
+        }
+
+        button
+        {
+            display: block;
+            width: 100%;
+            padding: 10px 10px;
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Heading-->
+    <h1 style="text-align: center;">Survey Form</h1>
+    <form style="text-align: center;">
+        <fieldset>
+            <!--Name field-->
+            <div class="form-control">
+                <label style="display: block; margin-bottom: 10px;">Name</label>
+                <input type="text" name="Name" placeholder="Enter Your Name">
+            </div>
+
+            <!--Emailo field-->
+            <div class="form-control">
+                <label style="display: block; margin-bottom: 10px;">Email</label>
+                <input type="email" name="Name" placeholder="Enter your email">
+            </div>
+
+            <!--age field-->
+            <div class="form-control">
+                <label style="display: block; margin-bottom: 10px;">Age</label>
+                <input type="text" name="Name" placeholder="Enter your age">
+            </div>
+
+            <!--phone number-->
+            <div class="form-control">
+                <label style="display: block; margin-bottom: 10px;">Phone</label>
+                <input type="text" name="Name" placeholder="Enter your phone number">
+            </div>
+
+            <!--select option-->
+            <div class="form-control">
+                <label style="display: block; margin-bottom: 10px;">Select Your Position</label>
+                <select>
+                    <option>Student</option>
+                    <option>Intern</option>
+                    <option>Working</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <!--gender-->
+            <div class="form-control">
+                <label style="display: block; margin-bottom: 10px;">Choose Gender</label>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+
+            <!--language-->
+            <div class="form-control">
+                <label style="display: block; margin-bottom: 10px;">Languages and Frameworks Known</label>
+                <input type="checkbox" name="select">C
+                <input type="checkbox" name="select">C++
+                <input type="checkbox" name="select">Java
+                <input type="checkbox" name="select">Python
+                <input type="checkbox" name="select">HTML
+                <input type="checkbox" name="select">CSS
+            </div>
+
+            <!--text area comments-->
+            <div class="form-control">
+                <label style="display: block; margin-bottom: 10px;">Any Comments or Suggestions</label>
+                <textarea id="comments" placeholder="Enter your Comments here"></textarea>
+            </div>
+
+            <!--button-->
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
